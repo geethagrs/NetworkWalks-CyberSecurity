@@ -1,7 +1,7 @@
-
-# 🔐 Cybersecurity Lab Environment Setup
-
-**Building an isolated virtual lab for penetration testing and ethical hacking practice**
+ h1 align="center"> 💻 networkwalks-B082-week1-Cybersecurity-lab-setup</h1>
+<p align="center">
+       <strong>**Building an isolated virtual lab for penetration testing and ethical hacking practice**</strong>
+</p>
 
 ---
 
@@ -14,7 +14,6 @@ The purpose of the lab is to create a controlled environment where cybersecurity
 The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
 
 ---
-
 
 ## 🎯 Objectives
 
@@ -45,7 +44,6 @@ It can be used for activities such as:
 - Web security testing
 - Exploitation practice
 - Security-tool experimentation
-
 
 ---
 
@@ -81,11 +79,11 @@ Additional target machines can be added to the same virtual network in future pr
 ## Step 1. Install 7-Zip
 
 * The Kali Linux VM files need to be extracted and prepared before importing them into the virtualization environment.
+  Download link: https://www.7-zip.org/download.html
+
+  ![](7zip-download.PNG)
+  
 * 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
-
-Download link: https://www.7-zip.org/download.html
-
-![](7zip-download.PNG)
 
 ![](7zip-extractfolder.PNG)
 
@@ -97,13 +95,14 @@ Download link: https://www.7-zip.org/download.html
 ## Step 2. Install VirtualBox
 
 * VirtualBox provides the virtualized environment required t o run Kali Linux as a separate virtual machine.
+
+  Download link: https://www.virtualbox.org/wiki/Downloads
+
+  ![](1.0-download-vm.PNG)
+  
 * VirtualBox was installed as the hypervisor for the cybersecurity laboratory.
 
-Download link: https://www.virtualbox.org/wiki/Downloads
-
-![](1.0-download-vm.PNG)
-
-![](1.install-virtual-box.png)
+ ![](1.install-virtual-box.png)
 
 ## Result
 **Status:** ✅ Completed
@@ -133,13 +132,14 @@ This will allow future attacker and target VMs to communicate within the lab.
 ## Step 4. Import Kali Linux
 
 * Kali Linux is used as the primary cybersecurity operating environment for practical security learning, laboratory exercises, and authorized security testing.
+
+  Download link: https://www.kali.org/get-kali/#kali-virtual-machines
+
+ ![](2.download-kali-linux.png)
+  
 * Downloaded and imported the **Kali Linux virtual machine** into Oracle VirtualBox and connected the VM to the configured `NatNetwork`.
 
-Download link: https://www.kali.org/get-kali/#kali-virtual-machines
-
-![](2.download-kali-linux.png)
-
-![](15.kali-linux-extract.png)
+ ![](15.kali-linux-extract.png)
 
 The VM network adapter was configured as follows:
 
@@ -183,7 +183,6 @@ DNS: 8.8.8.8
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 
 ![](7.%20kali-linux-ip-conf.png)
-
 
 ### Commands Used
 
