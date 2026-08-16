@@ -46,13 +46,12 @@ It can be used for activities such as:
 - Exploitation practice
 - Security-tool experimentation
 
-⚠️ **Important:** This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
 
 ---
 
 ## 🏗️ Lab Architecture
 
-![](0.lab-structure.png)
+![](0.lab-configuration.png)
 
 
 Additional target machines can be added to the same virtual network in future projects.
@@ -82,21 +81,37 @@ Additional target machines can be added to the same virtual network in future pr
 
 ## Step 1. Install 7-Zip
 
-7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+* The Kali Linux VM files need to be extracted and prepared before importing them into the virtualization environment.
+* 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
 
-**Tool:** 7-Zip
+Download link: https://www.7-zip.org/download.html
+
+![](7zip-download.PNG)
+![](7zip-extractfolder.PNG)
+
+## Result
+**Status:** ✅ Completed
 
 ---
 
 ## Step 2. Install VirtualBox
 
-VirtualBox was installed as the hypervisor.
+* VirtualBox provides the virtualized environment required t o run Kali Linux as a separate virtual machine.
+* VirtualBox was installed as the hypervisor for the cybersecurity laboratory.
 
+Download link: https://www.virtualbox.org/wiki/Downloads
+
+![](1.0-download-vm.PNG)
+![](1.install-virtual-box.png)
+
+## Result
+**Status:** ✅ Completed
 ---
 
 ## Step 3. Create the NAT Network
 
-A dedicated NAT Network was created in VirtualBox.
+* The NAT Network provides a controlled virtual networking environment for the laboratory machines.
+* So a dedicated NAT Network was created in VirtualBox.
 
 Configuration:
 Network Name: NatNetwork
@@ -110,12 +125,19 @@ A **NAT Network** was selected because multiple virtual machines connected to th
 
 This will allow future attacker and target VMs to communicate within the lab.
 
-
+## Result
+**Status:** ✅ Completed
 ---
 
 ## Step 4. Import Kali Linux
 
-The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+* Kali Linux is used as the primary cybersecurity operating environment for practical security learning, laboratory exercises, and authorized security testing.
+* Downloaded and imported the **Kali Linux virtual machine** into Oracle VirtualBox and connected the VM to the configured `NatNetwork`.
+
+Download link: https://www.kali.org/get-kali/#kali-virtual-machines
+
+![](2.download-kali-linux.png)
+![](15.kali-linux-extract.png)
 
 The VM network adapter was configured as follows:
 
@@ -138,6 +160,8 @@ A shared folder was also configured for transferring required files between the 
 
 ![](9.vm-Shared-folder.png)
 
+## Result
+**Status:** ✅ Completed
 ---
 
 ## Step 5. Configure the Kali Linux Network
