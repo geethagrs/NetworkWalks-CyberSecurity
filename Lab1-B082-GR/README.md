@@ -87,6 +87,7 @@ Additional target machines can be added to the same virtual network in future pr
 Download link: https://www.7-zip.org/download.html
 
 ![](7zip-download.PNG)
+
 ![](7zip-extractfolder.PNG)
 
 ## Result
@@ -102,6 +103,7 @@ Download link: https://www.7-zip.org/download.html
 Download link: https://www.virtualbox.org/wiki/Downloads
 
 ![](1.0-download-vm.PNG)
+
 ![](1.install-virtual-box.png)
 
 ## Result
