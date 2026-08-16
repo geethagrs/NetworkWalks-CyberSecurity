@@ -137,6 +137,7 @@ This will allow future attacker and target VMs to communicate within the lab.
 Download link: https://www.kali.org/get-kali/#kali-virtual-machines
 
 ![](2.download-kali-linux.png)
+
 ![](15.kali-linux-extract.png)
 
 The VM network adapter was configured as follows:
