@@ -58,25 +58,6 @@ Additional target machines can be added to the same virtual network in future pr
 
 ---
 
-## ⚙️ Lab Configuration
-
-| 🧩 Component       | ⚙️ Configuration   |
-| ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 10         |
-| 🧠 Host RAM        | 6 GB               |
-| ⚡ Processor       | Intel Core i5      |
-| 🧰 Hypervisor      | VirtualBox 7.2  |
-| 🐉 Security OS     | Kali Linux 2026.2  |
-| 🧠 Kali RAM        | 2048 MB            |
-| 🌐 Virtual Network | NAT Network        |
-| 📡 Network Address | 10.0.0.0/24        |
-| 🐧 Kali IP Address | 10.0.0.2/24        |
-| 🚪 Default Gateway | 10.0.0.1           |
-| 🌍 DNS Server      | 8.8.8.8            |
-| 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
-
----
-
 # 🪜 Lab Setup Procedure
 
 ## Step 1. Install 7-Zip
@@ -88,7 +69,7 @@ Additional target machines can be added to the same virtual network in future pr
   
 * 7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
 
-![](7zip-extractfolder.PNG)
+  ![](7-zip-extractfolder.png)
 
 ## Result
 **Status:** ✅ Completed
@@ -105,7 +86,7 @@ Additional target machines can be added to the same virtual network in future pr
   
 * VirtualBox was installed as the hypervisor for the cybersecurity laboratory.
 
- ![](1.install-virtual-box.png)
+  ![](1.install-virtual-box.png)
 
 ## Result
 **Status:** ✅ Completed
@@ -116,13 +97,13 @@ Additional target machines can be added to the same virtual network in future pr
 * The NAT Network provides a controlled virtual networking environment for the laboratory machines.
 * So a dedicated NAT Network was created in VirtualBox.
 
-Configuration:
-Network Name: NatNetwork
-IPv4 Prefix:  10.0.0.0/24
-DHCP:         Enabled
-IPv6:         Disabled
+  Configuration:
+  Network Name: NatNetwork 
+  IPv4 Prefix:  10.0.0.0/24 
+  DHCP:         Enabled 
+  IPv6:         Disabled 
 
-![](4.%20enable-VM-nat.png)
+ ![](4.%20enable-VM-nat.png)
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
@@ -138,11 +119,11 @@ This will allow future attacker and target VMs to communicate within the lab.
 
   Download link: https://www.kali.org/get-kali/#kali-virtual-machines
 
- ![](2.download-kali-linux.png)
+  ![](2.download-kali-linux.png)
   
 * Downloaded and imported the **Kali Linux virtual machine** into Oracle VirtualBox and connected the VM to the configured `NatNetwork`.
 
- ![](15.kali-linux-extract.png)
+  ![](15.kali-linux-extract.png)
 
 The VM network adapter was configured as follows:
 
