@@ -168,9 +168,10 @@ A shared folder was also configured for transferring required files between the 
 
 ## Step 5. Configure the Kali Linux Network
 
-The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+* Proper IP configuration is required for Kali Linux to communicate with the configured **NAT Network** and access network resources.
+* The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
 
-Example configuration:
+IP configuration:
 
 ```text
 IP Address: 10.0.0.2
@@ -183,13 +184,28 @@ A consistent IP address makes it easier to document the lab and reference the Ka
 
 ![](7.%20kali-linux-ip-conf.png)
 
+
+### Commands Used
+
+```bash
+ifconfig
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+ping 8.8.8.8
+
+```
+
+## Result
+**Status:** ✅ Completed
+
 ---
 
 ## Step 6. Create a Clean VM Snapshot
 
-After completing the initial configuration, a VirtualBox snapshot was created.
+* The snapshot provides a **safe restore point** before continuing with future cybersecurity labs and experiments.
+* After completing the initial configuration, a VirtualBox snapshot was created.
 
-Example snapshot name: Snapshot 1 - cyber security lab1
+snapshot name: Snapshot 1 - cyber security lab1
 
 ```text
 Clean Kali - Network Setup
@@ -200,6 +216,9 @@ The snapshot represents the clean baseline of the laboratory.
 If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
 
 ![](8.%20snapshot-kali-linux.png)
+
+## Result
+**Status:** ✅ Completed
 ---
 
 # 🔎 Lab Verification
@@ -263,7 +282,6 @@ The issue can be resolved by:
 
 After enabling virtualization, the VM will gets start successfully.
 
-
 ---
 
 # 💡 What I Learned
@@ -290,13 +308,19 @@ This provides a known-good recovery point for future cybersecurity exercises.
 
 ---
 
-# 🔗 Tools & Resources
+# 🔐 Security & Ethics
 
-- **7-Zip:** [https://7-zip.org/download.html](https://7-zip.org/download.html)
-- **VirtualBox:** [https://virtualbox.org/wiki/Downloads](https://virtualbox.org/wiki/Downloads)
-- **Kali Linux:** [https://kali.org/get-kali](https://kali.org/get-kali)
+This laboratory is intended for **educational and authorized cybersecurity practice only**.
+
+Security testing should only be performed on systems, networks, applications, or devices that you own or have explicit permission to test.
 
 ---
+
+# 👨‍🏫 Mentor
+
+**Waqas Karim (CCIE)**
+
+Thank you for the technical guidance and practical learning opportunity throughout the internship.
 
 # 👤 Author
 
