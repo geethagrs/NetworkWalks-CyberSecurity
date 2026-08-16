@@ -53,7 +53,6 @@ It can be used for activities such as:
 
 ![](0.lab-configuration.png)
 
-
 Additional target machines can be added to the same virtual network in future projects.
 
 ---
