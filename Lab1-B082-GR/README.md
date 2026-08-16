@@ -1,4 +1,7 @@
- h1 align="center"> 💻 networkwalks-B082-week1-Cybersecurity-lab-setup</h1>
+<p align="center">
+      <h1 align="center"> 💻 NetworkWalks-B082-week1-Cybersecurity-lab-setup </h1>
+</p>
+
 <p align="center">
        <strong>**Building an isolated virtual lab for penetration testing and ethical hacking practice**</strong>
 </p>
